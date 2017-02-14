@@ -43,7 +43,8 @@
         android:scrollIndicators="bottom"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        app:tabSelectedTextColor="@color/colorBlanco">
     </android.support.design.widget.TabLayout>
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package lightpath.com.ibuy.presentation.view.Principal.entities;
+package lightpath.com.ibuy.presentation.model.Adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
