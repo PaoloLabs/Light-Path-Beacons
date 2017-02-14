@@ -51,4 +51,28 @@ public class PrincipalActivity extends AppCompatActivity implements PrincipalVie
     public void showMessage() {
 
     }
+
+    @Override
+    public void initializeComponents() {
+        tabLayout = (TabLayout) findViewById(R.id.principal_tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.principal_viewPager);
+
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
+        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
+        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
+        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
+
+        viewPager.setAdapter(viewPagerAdapter);
+        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setIcon(R.mipmap.ic_launcher);
+        tabLayout.getTabAt(1).setIcon(R.mipmap.ic_launcher);
+        tabLayout.getTabAt(2).setIcon(R.mipmap.ic_launcher);
+        tabLayout.getTabAt(3).setIcon(R.mipmap.ic_launcher);
+    }
+
+    @Override
+    public void showMessage(String mensaje) {
+
+    }
 }

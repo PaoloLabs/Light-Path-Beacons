@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context="lightpath.com.ibuy.presentation.view.Favorites.FavoritesFragment">
 
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/favorites_rv"
         android:layout_width="match_parent"
