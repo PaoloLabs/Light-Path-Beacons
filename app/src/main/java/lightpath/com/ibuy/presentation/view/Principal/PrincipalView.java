@@ -5,4 +5,8 @@ package lightpath.com.ibuy.presentation.view.Principal;
  */
 
 public interface PrincipalView {
+    void initializeComponents();
+    void renderTabView();
+
+    void showMessage();
 }
