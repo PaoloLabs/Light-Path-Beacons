@@ -19,7 +19,6 @@ public class Intromanager {
         editor.putBoolean("check", isFirst);
         editor.commit();
     }
-
     public boolean Check(){
         return pref.getBoolean("check", true);
     }
