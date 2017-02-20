@@ -2,12 +2,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="lightpath.com.ibuy.presentation.view.About.AboutFragment">
+    tools:context="lightpath.com.ibuy.presentation.view.About.AboutFragment"
+    android:background="@drawable/tapiz_fondo">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:weightSum="1">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:id="@+id/imAgvcab"
+                    android:background="@drawable/ibuyimg"/>
+                <ImageView
+                    android:layout_width="277dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/imgabt"
+                    android:background="@drawable/about1" />
+    </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>
