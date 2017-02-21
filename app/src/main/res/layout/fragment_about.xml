@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="lightpath.com.ibuy.presentation.view.About.AboutFragment"
-    android:background="@drawable/tapiz_fondo">
+    >
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+    <!--ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -31,5 +31,5 @@
                     android:id="@+id/imgabt"
                     android:background="@drawable/about1" />
     </LinearLayout>
-    </ScrollView>
+    </ScrollView-->
 </FrameLayout>

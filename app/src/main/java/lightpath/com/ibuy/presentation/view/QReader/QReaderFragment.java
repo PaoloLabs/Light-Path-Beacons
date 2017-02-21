@@ -30,27 +30,26 @@ public class QReaderFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
-
-        gen = (Button) container.findViewById(R.id.gen);
-        scan = (Button) container.findViewById(R.id.scan);
+        View view=inflater.inflate(R.layout.fragment_qreader, container, false);
+       gen = (Button) view.findViewById(R.id.gen);
+       scan = (Button) view.findViewById(R.id.scan);
 
         gen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent gIntent = new Intent(QReaderFragment.this, GeneratorActivity.class);
+            Intent gIntent = new Intent(getContext(), GeneratorActivity.class);
                 startActivity(gIntent);
             }
         });
         scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent rIntent = new Intent(QReaderFragment.this, ReaderActivity.class);
+                Intent rIntent = new Intent(getContext(), ReaderActivity.class);
                 startActivity(rIntent);
             }
         });
+        return view;
 
-
-        return inflater.inflate(R.layout.fragment_about, container, false);
     }
 
     @Override

@@ -10,13 +10,6 @@
 
     <!-- TODO: Update blank fragment layout -->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="GENERATOR"
-        android:id="@+id/gen"
-        android:layout_marginTop="50dp"/>
-    <Button
         android:id="@+id/scan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,5 +25,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="GENERATOR"
+        android:id="@+id/gen"
+        android:layout_marginTop="50dp"
+        />
 
 </FrameLayout>
