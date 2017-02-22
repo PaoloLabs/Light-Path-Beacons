@@ -27,17 +27,17 @@ public class PrincipalActivity extends AppCompatActivity implements PrincipalVie
     @Override
     public void renderTabView() {
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragments(new ReceiverFragment(PrincipalActivity.this), "Rec");
-        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
-        viewPagerAdapter.addFragments(new QReaderFragment(PrincipalActivity.this), "QR");
+        viewPagerAdapter.addFragments(new ReceiverFragment(PrincipalActivity.this), "For You");
+        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Favorites");
+        viewPagerAdapter.addFragments(new QReaderFragment(PrincipalActivity.this), "Scan");
         viewPagerAdapter.addFragments(new AboutFragment(PrincipalActivity.this), "About");
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.getTabAt(0).setIcon(R.mipmap.ic_launcher);
-        tabLayout.getTabAt(1).setIcon(R.mipmap.ic_launcher);
-        tabLayout.getTabAt(2).setIcon(R.mipmap.ic_launcher);
-        tabLayout.getTabAt(3).setIcon(R.mipmap.ic_launcher);
+        tabLayout.getTabAt(0).setIcon(R.drawable.imgpsh_fullsize1);
+        tabLayout.getTabAt(1).setIcon(R.drawable.imgpsh_fullsize5);
+        tabLayout.getTabAt(2).setIcon(R.drawable.imgpsh_fullsize2);
+        tabLayout.getTabAt(3).setIcon(R.drawable.imgpsh_fullsize3);
     }
 
     @Override

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "507172719758",
+    "firebase_url": "https://beacons-7ea33.firebaseio.com",
+    "project_id": "beacons-7ea33",
+    "storage_bucket": "beacons-7ea33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507172719758:android:829572682d4dfe3b",
+        "android_client_info": {
+          "package_name": "lightpath.com.ibuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507172719758-o4vdf88fje5a0amtltpm0u3ksr8pipa4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lightpath.com.ibuy",
+            "certificate_hash": "00cd35805c9ebc15cc6d2b0462a38bcf7fd8d095"
+          }
+        },
+        {
+          "client_id": "507172719758-p2lbo9ci8c0qps47nbrjiokut892i9ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF9tU_LS8Z-j7gpJKJZMUEZ5ZgNJk9Koo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507172719758-p2lbo9ci8c0qps47nbrjiokut892i9ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

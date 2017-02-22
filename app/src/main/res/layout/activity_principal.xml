@@ -25,15 +25,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/principal_tabLayout"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/colorBlanco"
+        android:background="@color/colorBlanco"
+        android:textColor="@color/colorPlomo"
         app:tabMode="fixed"
         android:clickable="true"
         app:tabGravity="fill"
         android:elevation="6dp"
         android:scrollIndicators="bottom"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorPlomo"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabTextAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentEnd="true"
+        >
     </android.support.design.widget.TabLayout>
 </RelativeLayout>
