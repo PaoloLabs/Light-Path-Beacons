@@ -12,7 +12,6 @@ import lightpath.com.ibuy.R;
 
 public class AboutFragment extends Fragment {
     private Context context;
-
     private OnFragmentInteractionListener mListener;
 
     public AboutFragment(Context context) {

@@ -17,7 +17,6 @@ public class QReaderFragment extends Fragment {
     Button gen, scan;
 
     private OnFragmentInteractionListener mListener;
-
     public QReaderFragment(Context context) {
         this.context = context;
     }
