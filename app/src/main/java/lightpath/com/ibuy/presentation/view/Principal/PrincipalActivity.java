@@ -24,7 +24,6 @@ public class PrincipalActivity extends AppCompatActivity implements PrincipalVie
         initializeComponents();
         renderTabView();
     }
-
     @Override
     public void renderTabView() {
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
