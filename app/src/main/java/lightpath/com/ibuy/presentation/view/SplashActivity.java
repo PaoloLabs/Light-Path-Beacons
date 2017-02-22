@@ -87,15 +87,15 @@ public class SplashActivity extends AppCompatActivity {
                         TimeCounter++;
                         switch (TimeCounter) {
                             case 1:
-                                imgSplash.setBackgroundResource(R.drawable.splash_1);
+                                imgSplash.setBackgroundResource(R.drawable.splash);
                                 break;
 
                             case 2:
-                                imgSplash.setBackgroundResource(R.drawable.splash_1);
+                                imgSplash.setBackgroundResource(R.drawable.splash);
                                 break;
 
                             case 3:
-                                imgSplash.setBackgroundResource(R.drawable.splash_1);
+                                imgSplash.setBackgroundResource(R.drawable.splash);
                                 break;
 
                             case 8:
