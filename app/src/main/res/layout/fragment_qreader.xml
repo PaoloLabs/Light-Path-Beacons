@@ -6,32 +6,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/splash"
     tools:context="lightpath.com.ibuy.presentation.view.QReader.QReaderFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/scan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="SCANNER"
-        android:layout_marginTop="100dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="QR Code"
-        android:textSize="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="GENERATOR"
-        android:id="@+id/gen"
-        android:layout_marginTop="50dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan your products with a single click"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="GENERATOR"
+            android:id="@+id/gen"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_weight="0.14" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="SCANNER"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
 
 </FrameLayout>

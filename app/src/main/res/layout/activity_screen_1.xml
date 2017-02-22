@@ -14,12 +14,12 @@
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@drawable/tshop"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sports!"
+            android:text="Bit shop!"
             android:textColor="#ffffff"
             android:textSize="40dp"
             android:textStyle="bold"
@@ -30,7 +30,7 @@
             android:layout_marginTop="20dp"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
-            android:text="The Easiest Way To Follow Your Favorite Sport!"
+            android:text="Whatever your horse bitting problem we are able to help. Whether you are looking for a double bridle bit set or just a loose ring snaffle we have a full range or bits available to buy or to trial from our comprehensive Bit Bank."
             android:textAlignment="center"
             android:textColor="#ffffff"
             android:textSize="20sp"/>
