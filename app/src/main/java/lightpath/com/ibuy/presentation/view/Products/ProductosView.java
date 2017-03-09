@@ -18,4 +18,5 @@ public interface ProductosView {
     void navigateToPrincipal();
 
     void initializeComponents();
+    void update_toolbar();
 }

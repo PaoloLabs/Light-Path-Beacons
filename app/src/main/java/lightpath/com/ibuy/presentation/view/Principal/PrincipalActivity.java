@@ -22,7 +22,6 @@ public class PrincipalActivity extends AppCompatActivity implements PrincipalVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         initializeComponents();
-        renderTabView();
     }
     @Override
     public void renderTabView() {
@@ -49,18 +48,6 @@ public class PrincipalActivity extends AppCompatActivity implements PrincipalVie
     public void initializeComponents() {
         tabLayout = (TabLayout) findViewById(R.id.principal_tabLayout);
         viewPager = (ViewPager) findViewById(R.id.principal_viewPager);
-
-        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
-        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
-        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
-        viewPagerAdapter.addFragments(new FavoritesFragment(PrincipalActivity.this), "Fav");
-
-        viewPager.setAdapter(viewPagerAdapter);
-        tabLayout.setupWithViewPager(viewPager);
-        tabLayout.getTabAt(0).setIcon(R.mipmap.ic_launcher);
-        tabLayout.getTabAt(1).setIcon(R.mipmap.ic_launcher);
-        tabLayout.getTabAt(2).setIcon(R.mipmap.ic_launcher);
-        tabLayout.getTabAt(3).setIcon(R.mipmap.ic_launcher);
+        renderTabView();
     }
 }

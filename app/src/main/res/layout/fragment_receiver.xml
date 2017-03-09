@@ -7,10 +7,61 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bmain"
         android:id="@+id/receiver_imgReceiver"
         android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b1"
+        android:id="@+id/receiver_imgb1"
+        android:visibility="gone"
+        android:layout_gravity="top|left"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b3"
+        android:visibility="gone"
+        android:id="@+id/receiver_imgb3"
+        android:layout_gravity="top|right"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b4"
+        android:visibility="gone"
+        android:id="@+id/receiver_imgb4"
+        android:layout_gravity="left|center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b5"
+        android:visibility="gone"
+        android:id="@+id/receiver_imgb5"
+        android:layout_gravity="bottom|right"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b6"
+        android:visibility="gone"
+        android:id="@+id/receiver_imgb6"
+        android:layout_gravity="bottom|center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b7"
+        android:visibility="gone"
+        android:id="@+id/receiver_imgb7"
+        android:layout_gravity="right|center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b2"
+        android:visibility="gone"
+        android:id="@+id/receiver_imgb2"
+        android:layout_gravity="top|center"/>
 
 </FrameLayout>
