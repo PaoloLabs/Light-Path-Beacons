@@ -12,10 +12,12 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -42,6 +44,7 @@ public class ProductsActivity extends AppCompatActivity implements ProductosView
     FirebaseDatabase base_de_datos;
     DatabaseReference myRef;
     private ProgressBar progressBar;
+    private ImageView imgMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -174,6 +177,8 @@ public class ProductsActivity extends AppCompatActivity implements ProductosView
         }
         });
          */
+        imgMain=(ImageView)findViewById(R.id.imageView);
+        Glide.with(ProductsActivity.this).load("http://briscoes-embed.azurewebsites.net/images/rebel-sports-nz/clothing/clothing_1.jpg?x=1").into(imgMain);
         recyclerView=(RecyclerView)findViewById(R.id.products_rv);
         gridLayoutManager= new GridLayoutManager(ProductsActivity.this,2);
         recyclerView.setLayoutManager(gridLayoutManager);
